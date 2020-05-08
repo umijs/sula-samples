@@ -1,2 +1,1 @@
-# sula-samples
-Samples for using Sula.
+# Sula Samples

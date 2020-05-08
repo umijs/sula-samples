@@ -1,0 +1,11 @@
+node_modules
+coverage
+__test__
+test/fixtures
+dist
+es
+lib
+.docz
+tools
+docs
+packages/colorfly
