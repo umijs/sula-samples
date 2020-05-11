@@ -1,4 +1,4 @@
-import 'antd/dist/antd.min.css';
+import 'antd/dist/antd.less';
 import { history } from 'umi';
 import {
   Icon,

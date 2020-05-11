@@ -15,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "@umijs/fabric": "^1.1.10",
+    "@umijs/plugin-antd": "^0.5.1",
     "eslint": "^6.5.1",
     "umi": "^3.0",
     "umi-plugin-sula": "^1.0.0-alpha.1"
