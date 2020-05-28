@@ -25,4 +25,4 @@ npm start
 
 Preview
 
-<image src="https://img.alicdn.com/tfs/TB112pCIoH1gK0jSZSyXXXtlpXa-2308-1302.png" />
+<image src="https://img.alicdn.com/tfs/TB1F3XDIXP7gK0jSZFjXXc5aXXa-2872-1398.png" />
