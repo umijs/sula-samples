@@ -1,9 +1,17 @@
-import 'antd/dist/antd.less';
+import 'antd/dist/antd.min.css';
 import { history } from 'umi';
 import {
   Icon,
 } from 'sula';
 import { EditOutlined, AppstoreOutlined } from '@ant-design/icons';
+
+import Mock from 'mockjs';
+
+import '../mock';
+
+Mock.setup({
+  timeout: '1000-2000',
+});
 
 Icon.iconRegister({
   edit: {
@@ -29,7 +37,7 @@ window.onload = function () {
   ul.style.margin = '0';
 
   setTimeout(() => {
-    ['create-form', 'query-table', 'step-form'].forEach((path) => {
+    ['/create-form', '/query-table', '/step-form'].forEach((path) => {
       if (!path) {
         return;
       }
@@ -37,7 +45,10 @@ window.onload = function () {
       a.text = path;
       a.style.marginRight = '16px';
       a.onclick = () => {
-        history.push(path);
+        const pathname = history.location.pathname;
+        if(path !== pathname) {
+          history.push(path);
+        }
       };
       ul.appendChild(a);
     });

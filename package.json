@@ -16,12 +16,14 @@
   "devDependencies": {
     "@umijs/fabric": "^1.1.10",
     "eslint": "^6.5.1",
+    "mockjs": "^1.1.0",
     "umi": "^3.0",
     "umi-plugin-sula": "^1.0.0-alpha.1"
   },
   "dependencies": {
     "@ant-design/icons": "^4.1.0",
     "antd": "^4.0.0",
+    "moment": "^2.26.0",
     "sula": "^1.0.0-alpha.1"
   }
 }
