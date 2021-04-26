@@ -17,6 +17,11 @@ export default class CreateFormDemo extends React.Component {
               label: '姓名',
               field: 'input',
             },
+            {
+              name: 'hobby',
+              label: '爱好',
+              field: 'select',
+            },
           ]}
           submit={{
             url: 'https://www.mocky.io/v2/5185415ba171ea3a00704eed',

@@ -1,8 +1,6 @@
 import 'antd/dist/antd.min.css';
-import { history } from 'umi';
-import {
-  Icon,
-} from 'sula';
+import { history, getLocale, setLocale } from 'umi';
+import { Icon } from 'sula';
 import { EditOutlined, AppstoreOutlined } from '@ant-design/icons';
 
 import Mock from 'mockjs';
@@ -46,7 +44,7 @@ window.onload = function () {
       a.style.marginRight = '16px';
       a.onclick = () => {
         const pathname = history.location.pathname;
-        if(path !== pathname) {
+        if (path !== pathname) {
           history.push(path);
         }
       };
@@ -54,5 +52,20 @@ window.onload = function () {
     });
 
     document.body.insertBefore(ul, root);
+  }, 0);
+
+  setTimeout(() => {
+    const lang = document.createElement('button');
+    lang.textContent = '切换语言';
+    lang.style.marginRight = '16px';
+    lang.addEventListener('click', () => {
+      const locale = getLocale();
+      if (locale === 'zh-CN') {
+        setLocale('en-US');
+      } else {
+        setLocale('zh-CN');
+      }
+    });
+    ul.appendChild(lang);
   }, 0);
 };
